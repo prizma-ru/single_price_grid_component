@@ -24,8 +24,8 @@ main{
     margin: 2rem auto;
     max-width: 800px;
     /*padding: 2rem;*/
-    display: grid; 
-    grid-gap: 0;
+   /* display: grid; 
+    grid-gap: 0;*/
     margin: 0 auto;
     border: 1px solid var(--grayish_blue);
 }
@@ -70,20 +70,20 @@ section h3{
 
 }
 .section_0{
-    grid-column: 1/3;
-    /*background: var(--cyan);*/
+    /*grid-column: 1/3;*/
+   background: var(--cyan);
 }
 
 
 .section_1{
-    grid-row: 2;
+    /*grid-row: 2 / 2;*/
     background: var(--cyan);
-    display: inline-block;
+    /*display: inline-block;*/
     vertical-align: middle;
 }
 
 .section_2{
-    grid-row: 2;
+  /*  grid-row: 2 / 2;*/
     background: var(--cyan);
     opacity: 0.8;
     padding-right: 3rem;
@@ -92,13 +92,39 @@ section h3{
 section h3, p, span{
     color: white;
 }
+
+.grid-1{
+    grid-area: grid_1;
+}
+.grid-2{
+    grid-area: grid_2;
+}
+.grid-3{
+    grid-area: grid_3;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-areas:
+    "grid_1 grid_1"
+    "grid_2 grid_3";   
+    /*grid-column-gap: 30px;
+    grid-row-gap: 30px;*/
+
+}
+    
+
+
+/*
 span{
     font-size: 4rem;
 }
 .section_2 p{
     line-height: 3rem;
     
-}
+}*/
 
 /* Button */
 .btn {
