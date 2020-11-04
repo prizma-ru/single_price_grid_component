@@ -1,0 +1,131 @@
+/*### Primary*/
+:root{
+--cyan: hsl(179, 62%, 43%);
+--bright_yellow: hsl(71, 73%, 54%);
+
+/*### Neutral*/
+
+--light_gray: hsl(204, 43%, 93%);
+--grayish_blue: hsl(218, 22%, 67%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+} /*обнуляем отступы*/
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    max-width: 1440px;
+    margin: 10rem auto 0;
+}
+main{
+    margin: 2rem auto;
+    max-width: 800px;
+    /*padding: 2rem;*/
+    display: grid; 
+    grid-gap: 0;
+    margin: 0 auto;
+    border: 1px solid var(--grayish_blue);
+}
+header{
+    margin: 3rem;
+}
+
+header h2{
+    color:var(--cyan);
+    font-size: 60px;
+    padding-bottom: 2rem;
+
+}
+header h3{
+    color:var(--bright_yellow);
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+header p{
+    font-size: 1.2rem;
+}
+.section_1 p{
+    font-size: 1.5rem;
+}
+.section_2 p{
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+
+header p{
+    
+    color:var(--grayish_blue);
+}
+section{
+    padding: 2rem;
+    vertical-align: center;
+}
+section h3{
+    font-size: 30px;
+    margin-bottom: 2rem;
+
+}
+.section_0{
+    grid-column: 1/3;
+    /*background: var(--cyan);*/
+}
+
+
+.section_1{
+    grid-row: 2;
+    background: var(--cyan);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section_2{
+    grid-row: 2;
+    background: var(--cyan);
+    opacity: 0.8;
+    padding-right: 3rem;
+    
+}
+section h3, p, span{
+    color: white;
+}
+span{
+    font-size: 4rem;
+}
+.section_2 p{
+    line-height: 3rem;
+    
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 40px;
+    text-align: center;
+    background-color: var(--bright_yellow) ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.4rem;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: var(--grayish_blue);
+    
+}
+div{
+    margin: 2rem auto;
+}
+.middle
+{
+    vertical-align: middle;
+}
